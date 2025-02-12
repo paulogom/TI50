@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Base</title>
+    <style>
+        header{
+            background-color: #999999;
+            height: 150px;
+        }
+        nav{
+            background-color: #000000;
+            height: 50px;
+        }
+        main{
+            background-color: #999999;
+            height: 400px;
+            width: 70%;
+        }
+        aside{
+            background-color: #555555;
+            height: 400px;
+            width: 30%;
+        }
+        footer{
+            background-color: #000000;
+            height: 150px;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <div class="row">
+        <main></main>
+        <aside></aside>
+    </div>
+    <footer></footer>
+</body>
+</html>
