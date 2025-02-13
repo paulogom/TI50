@@ -4,24 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Base</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <style>
+        body{
+            margin:0;
+        }
         header{
             background-color: #999999;
-            height: 150px;
+            padding:20px;   
         }
+
+        h1{
+          text-align: center;
+          flex-grow: 1;
+          align-self: center;
+        }
+
+
         nav{
-            background-color: #000000;
-            height: 50px;
+            background-color: #515151;
         }
+
+        .navbar-nav{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav-item{
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .nav-link{
+            text-decoration: none;
+            color:white;
+            padding:10px;
+            display: block;
+        }
+        .nav-link:hover{
+            background-color: black;
+        }
+
         main{
             background-color: #999999;
-            height: 400px;
             width: 70%;
+            padding: 20px;
+            box-sizing: border-box;
         }
         aside{
             background-color: #555555;
-            height: 400px;
             width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            
         }
         footer{
             background-color: #000000;
@@ -33,12 +71,38 @@
         }
     </style>
 </head>
-<body>
-    <header></header>
-    <nav></nav>
+<body >
+    <header class="row">
+        <img src="imagens/logo.svg" alt="Logo do Senac">
+        <h1>Layout Base</h1>
+    </header>
+    <nav>
+        <!-- ul.navbar-nav>li.nav-item*5>a.nav-link -->
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+        </ul>
+    </nav>
     <div class="row">
-        <main></main>
-        <aside></aside>
+        <main>
+            <h1>Conteúdo Principal</h1>
+            <!-- p*6>lorem -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit in quis qui tempore, non rerum explicabo eos atque adipisci excepturi similique illum nemo esse illo. Nisi adipisci cum vero!</p>
+            <p>Harum voluptatum asperiores laudantium quaerat sed iste adipisci optio impedit id ab consequuntur corrupti tempora maxime repellendus quas, possimus eaque qui aliquam quos, unde consequatur quo expedita dicta? Rerum, unde.</p>
+            <p>Saepe ipsa consequuntur magnam distinctio ratione optio fugit accusantium ipsam modi eaque voluptas, doloremque corporis odio necessitatibus earum eligendi sapiente totam? Asperiores, magnam dicta? Iure sint ratione alias voluptas reprehenderit.</p>
+            <p>Laudantium, quae incidunt voluptatem libero tempora quaerat eos laboriosam unde tenetur delectus animi tempore amet rerum deleniti, ab ex. Ullam reiciendis vero qui ipsa consectetur facilis, voluptas labore quas maiores.</p>
+            <p>Ratione labore veniam quia excepturi sapiente ad commodi voluptas delectus accusantium, magnam iure? Recusandae voluptates dolor cumque facere. Fuga impedit quia mollitia, in autem cupiditate magni! Eos dolor ipsum quia!</p>
+            <p>Ratione obcaecati ducimus nemo est blanditiis, laboriosam eos numquam? Praesentium debitis quod tenetur architecto magni corporis repudiandae? Voluptates, iure illum? Cupiditate, qui? Quod inventore odit sunt repudiandae voluptatibus quia modi?</p>
+        </main>
+        <aside>
+            <h1>Conteúdo Secundário</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptate molestias, unde consequuntur hic repudiandae odit molestiae corporis aliquam eius doloribus delectus qui ex! Ab iusto soluta aperiam adipisci quia!</p>
+            <p>Dicta praesentium non delectus deleniti pariatur autem excepturi error, nesciunt, accusamus impedit laboriosam minima? Dolor in veritatis sint dolorum aperiam quia qui recusandae iste corrupti. Voluptatibus error consectetur perspiciatis suscipit?</p>
+            <p>Alias quaerat quo vero perferendis totam, deleniti repudiandae. Hic eligendi molestiae culpa quam, voluptatem est temporibus eum aut, vel nam, sapiente dolores nisi incidunt inventore totam earum impedit cupiditate. Impedit.</p>
+        </aside>
     </div>
     <footer></footer>
 </body>
