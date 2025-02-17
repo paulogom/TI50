@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Base</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <style>
         body{
@@ -14,30 +13,23 @@
             background-color: #999999;
             padding:20px;   
         }
-
-        h1{
+        header h1{ /*formata h1 que estiver dentro de um header */
           text-align: center;
           flex-grow: 1;
           align-self: center;
         }
-
-
         nav{
             background-color: #515151;
         }
-
         .navbar-nav{
-            display: flex;
             margin: 0;
             padding: 0;
             list-style: none;
         }
-
         .nav-item{
             flex-grow: 1;
             text-align: center;
         }
-
         .nav-link{
             text-decoration: none;
             color:white;
@@ -47,27 +39,58 @@
         .nav-link:hover{
             background-color: black;
         }
-
         main{
             background-color: #999999;
-            width: 70%;
+            width: 100%;
             padding: 20px;
             box-sizing: border-box;
         }
+
+        main img{
+            width: 100%;
+            max-width: 400px;
+            margin:0 20px 20px 0;
+            
+        }
         aside{
             background-color: #555555;
-            width: 30%;
+            width: 100%;
             padding: 20px;
             box-sizing: border-box;
             
         }
         footer{
-            background-color: #000000;
-            height: 150px;
+            background-color: #707070;
+            display: flex;
+        }
+        footer ul{
+            flex-grow: 1;
+            list-style: none;
+
         }
         .row{
             display: flex;
             flex-wrap: wrap;
+        }
+
+        @media (min-width:576px){
+            .navbar-nav{
+                display:flex;
+            }
+            main{
+                width: 70%;
+            }
+
+            aside{
+                width: 30%;
+            }
+        }
+
+        @media (min-width: 992px){
+            
+            main img{
+                float: left;
+            }
         }
     </style>
 </head>
@@ -89,6 +112,7 @@
     <div class="row">
         <main>
             <h1>Conteúdo Principal</h1>
+            <img src="imagens/tim.jpg" alt="Tim Berners-Lee">
             <!-- p*6>lorem -->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit in quis qui tempore, non rerum explicabo eos atque adipisci excepturi similique illum nemo esse illo. Nisi adipisci cum vero!</p>
             <p>Harum voluptatum asperiores laudantium quaerat sed iste adipisci optio impedit id ab consequuntur corrupti tempora maxime repellendus quas, possimus eaque qui aliquam quos, unde consequatur quo expedita dicta? Rerum, unde.</p>
@@ -104,6 +128,22 @@
             <p>Alias quaerat quo vero perferendis totam, deleniti repudiandae. Hic eligendi molestiae culpa quam, voluptatem est temporibus eum aut, vel nam, sapiente dolores nisi incidunt inventore totam earum impedit cupiditate. Impedit.</p>
         </aside>
     </div>
-    <footer></footer>
+    <footer>
+        <ul>
+            <li>Informação</li>
+            <li>Informação</li>
+            <li>Informação</li>
+        </ul>
+        <ul>
+            <li>Informação</li>
+            <li>Informação</li>
+            <li>Informação</li>
+        </ul>
+        <ul>
+            <li>Informação</li>
+            <li>Informação</li>
+            <li>Informação</li>
+        </ul>
+    </footer>
 </body>
 </html>
