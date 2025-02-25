@@ -13,9 +13,35 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+
+   
     <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        @font-face {
+            font-family: Jester;
+            src: url(fontes/Jester.ttf);
+        }
+
         :root{
-            --bs-primary-rgb: 45, 156, 62;
+            --bs-primary-rgb: 40, 160, 250;
+            --bs-secondary-rgb: 120, 120, 160;
+            --bs-dark-rgb: 0, 20, 60;
+            
+            --bs-body-font-family: Roboto, sans-serif;
+        }
+
+        header h1{
+            font-family: Jester;
+        }
+
+        .nav-link{
+            color: yellow !important;
+        }
+
+        .nav-link:hover{
+            color: red !important;
         }
     </style>
 
@@ -26,17 +52,17 @@
     </header>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark" >
         <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item  flex-grow-1 text-center">
                     <a href="#" class="nav-link">Link</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item flex-grow-1 text-center">
                     <a href="#" class="nav-link">Link</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item flex-grow-1 text-center">
                     <a href="#" class="nav-link">Link</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item flex-grow-1 text-center">
                     <a href="#" class="nav-link">Link</a>
                 </li>
             </ul>
@@ -46,13 +72,13 @@
         <div class="row">
             <main class="col-sm-8">
                 <article> <!--Conteúdo com começo, meio e fim -->
-                    <h1>Conteúdo Principal</h1>
+                    <h1  class="text-secondary">Conteúdo Principal</h1>
                     <section> <!--Parte de um conteúdo -->
-                        <h2>Parte 1</h2>
+                        <h2 class="text-secondary">Parte 1</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt temporibus quibusdam praesentium delectus eaque, sint enim ex alias quam aliquid recusandae, quo illum, ipsam eveniet impedit nulla veritatis perferendis incidunt?</p>
                     </section>
                     <section>
-                        <h2>Parte 2</h2>
+                        <h2 class="text-secondary">Parte 2</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt temporibus quibusdam praesentium delectus eaque, sint enim ex alias quam aliquid recusandae, quo illum, ipsam eveniet impedit nulla veritatis perferendis incidunt?</p>
                     </section>
                 </article>
