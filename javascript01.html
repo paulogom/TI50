@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de JavaScript</title>
+</head>
+
+<body id="corpo">
+
+    <h1>Modificando conteúdo</h1>
+
+    <p id="mensagem">Olá Mundo!</p>
+    <button onclick="document.getElementById('mensagem').innerHTML = 'Olá <br>JavaScript!';">Mudar Mensagem</button>
+
+    <h1>Modificando atributos</h1>
+    <button onclick="document.getElementById('lamp').src = 'imagens/on.gif';">Liga</button>
+    <img id="lamp" src="imagens/off.gif" alt="Lâmpada">
+    <button onclick="document.getElementById('lamp').src = 'imagens/off.gif';">Desliga</button>
+
+    <h1>Modificando Formatação</h1>
+
+    <p id="mensagem2">Olá Mundo!</p>
+    <button onclick="document.getElementById('mensagem2').style.fontSize = '32px';">Aumenta fonte</button>
+    <button onclick="document.getElementById('mensagem2').style.fontSize = '16px';">Diminui fonte</button>
+
+    <hr>
+
+    <button onclick="temaEscuro();">Tema Escuro</button>
+    <!-- Desafio: Crie um botão que transforme o fundo da página em preto. -->
+
+
+    <script>
+        function temaEscuro() {
+            document.getElementById('corpo').style.backgroundColor = '#222222';
+            document.getElementById('corpo').style.color = 'white';
+        }
+    </script>
+</body>
+</html>

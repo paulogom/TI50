@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <fieldset>
+            <legend> Dados de Acesso</legend>
+            <!--Rótulo para o campo input-->
+            <label for="nome">*Nome:</label> 
+            <!--Campo de entrada de texto-->
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            <br>
+            <label for="senha">*Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="email">*Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="data">Data de nascimento:</label>
+            <input type="date" name="data" id="data">
+            <br>
+            
+            <input type="radio" name="tipo" id="aluno" value="aluno">
+            <label for="aluno">Aluno</label>
+            <input type="radio" name="tipo" id="professor" value="professor">
+            <label for="professor">Professor</label>
+            <br>
+
+            <input type="checkbox" name="politica" id="politica" required>
+            <label for="politica">Aceito os termos da política de privacidade</label>
+            <br>
+
+            <input type="checkbox" name="informe" id="informe" checked>
+            <label for="informe">Desejo receber o informativo</label>
+            <br>
+
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="">Escolha...</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            <br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea maxlength="50" name="mensagem" id="mensagem"></textarea>
+
+        </fieldset>
+
+        <!--Botão de envio-->
+        <input type="reset" value="Limpar Formulário">
+        <input type="submit" value="Cadastrar">
+    </form>
+    
+</body>
+</html>

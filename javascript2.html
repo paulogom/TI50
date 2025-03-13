@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <style>
+        .oculto{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Manipular visibilidade</h1>
+
+    <button id="btn1" onclick="mostrar()">Mostrar</button>
+    <button id="btn2" style="display: none;" onclick="ocultar()">Ocultar</button>
+
+    <p id="msg" style="display: none;">Olá Mundo!</p>
+
+    <script>
+        function mostrar(){
+            document.getElementById('msg').style.display = 'block';
+            document.getElementById('btn1').style.display = 'none';
+            document.getElementById('btn2').style.display = 'block';
+        }
+
+        function ocultar(){
+            document.getElementById('msg').style.display = 'none';
+            document.getElementById('btn1').style.display = 'block';
+            document.getElementById('btn2').style.display = 'none';
+        }
+    </script>
+
+    <h2>Alternado Classe</h2>
+    <button onclick="mostrar2()" id="btn3">Mostrar</button>
+    <p class="oculto" id="msg2">Olá Mundo</p>
+
+    <script>
+        function mostrar2(){
+            let mensagem = document.getElementById('msg2');
+            let botao = document.getElementById('btn3');
+
+            mensagem.classList.toggle('oculto');
+            botao.innerText = mensagem.classList.contains('oculto') ?
+            'Mostrar' : 'Ocultar';
+        }
+    </script>
+
+    <h1>Outras formas de aparecer mensagens via JavaScript</h1>
+
+    <h2>Via Alerta</h2>
+
+    <button onclick="alert('Olá Mundo!')">Alerta</button>
+
+    <h2>Via console</h2>
+
+    <button onclick="console.log('Olá Mundo!')">Console</button>
+
+    <h2>Via documento</h2>
+
+    <button onclick="document.write('Olá Mundo!')">Documento</button>
+
+    <h1>Variáveis</h1>
+
+<script>
+
+    /* Comentário em JavaScript */
+    // Comentário em JavaScript
+
+    let variavel; // Declara variável
+    variavel = 10; // Atribui valor a variável
+
+    let variavel2 = "Senac"; // Declara e atribui valor a variável
+
+    console.log(variavel); // Exibe valor da variável no console
+    console.log(typeof variavel); // Exibe o tipo da variável no console
+
+    console.log(variavel2); 
+    console.log(typeof variavel2); 
+
+    let variavel3 = true;
+    console.log(variavel3);
+    console.log(typeof variavel3);
+
+    let variavel4 = document.getElementById('msg');
+    console.log(variavel4);
+    console.log(typeof variavel4);
+
+    variavel = 20;
+    console.log(variavel);
+
+</script>
+
+
+
+
+</body>
+</html>
